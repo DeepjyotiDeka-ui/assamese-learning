@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn Assamese Letters</title>
+
+  <!-- Important for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <h1>Learn Assamese Letters</h1>
+
+    <button onclick="startLearning('vowels')">
+      সৰবৰ্ণ (Vowels)
+    </button>
+
+    <button onclick="startLearning('consonants')">
+      ব্যঞ্জনবৰ্ণ (Consonants)
+    </button>
+
+  </div>
+
+  <script>
+    function startLearning(group) {
+      localStorage.setItem("group", group);
+      window.location.href = "learn.html";
+    }
+  </script>
+
+</body>
+</html>

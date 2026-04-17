@@ -1,0 +1,127 @@
+/* Reset some default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  text-align: center;
+
+  padding-top: 60px; /* space for navbar */
+}
+
+/* Main wrapper */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+
+  width: fit-content;   /* important */
+  margin: auto;         /* center horizontally */
+  text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+  font-size: clamp(24px, 5vw, 40px);
+  color: #333;
+}
+
+/* Big letter */
+#letter {
+  font-size: clamp(100px, 15vw, 180px);
+  margin: 20px 0;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+/* All buttons */
+button {
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Homepage buttons */
+.container button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Learn page buttons */
+.buttons button {
+  background-color: orange;
+  color: white;
+}
+
+/* Tablet and bigger screens */
+@media (min-width: 600px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button {
+    width: auto;
+    min-width: 150px;
+  }
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: #ffffff;
+  padding: 10px 15px;
+
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Navbar button */
+.navbar button {
+  background-color: #2196F3;
+  color: white;
+
+  font-size: 14px;
+  padding: 8px 14px;
+
+  border-radius: 8px;
+  border: none;
+
+  width: auto;
+}
+.image {
+  width: 265px;
+  height: 190px;
+
+  object-fit: contain; /* keeps aspect ratio */
+  background-color: #ffffff; /* fills empty space */
+}
