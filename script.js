@@ -33,7 +33,7 @@ const consonants = [
   { letter: "থ", sound: "sounds/tho.mp3", image: "images/tho.png" },
   { letter: "দ", sound: "sounds/do.mp3", image: "images/do.png" },
   { letter: "ধ", sound: "sounds/dho.mp3", image: "images/dho.png" },
-  { letter: "ন", sound: "sounds/no.mp3", image: "images/na.png" },
+  { letter: "ন", sound: "sounds/no.mp3", image: "images/no.png" },
   { letter: "প", sound: "sounds/pa.mp3", image: "images/pa.png" },
   { letter: "ফ", sound: "sounds/fha.mp3", image: "images/fha.png" },
   { letter: "ব", sound: "sounds/ba.mp3", image: "images/ba.png" },
@@ -42,18 +42,19 @@ const consonants = [
   { letter: "য", sound: "sounds/ya.mp3", image: "images/ya.png" },
   { letter: "ৰ", sound: "sounds/ra.mp3", image: "images/ra.png" },
   { letter: "ল", sound: "sounds/la.mp3", image: "images/la.png" },
+  { letter: "ৱ", sound: "sounds/wbo.mp3", image: "images/wbo.png" },
   { letter: "শ", sound: "sounds/sha.mp3", image: "images/sha.png" },
   { letter: "ষ", sound: "sounds/ssa.mp3", image: "images/ssa.png" },
   { letter: "স", sound: "sounds/sa.mp3", image: "images/sa.png" },
   { letter: "হ", sound: "sounds/ha.mp3", image: "images/ha.png" },
-  { letter: "ক্ষ", sound: "sounds/khy.mp3", image: "images/ksha.png" },
+  { letter: "ক্ষ", sound: "sounds/khy.mp3", image: "images/khy.png" },
   { letter: "ড়", sound: "sounds/roh.mp3", image: "images/roh.png" },
   { letter: "ঢ়", sound: "sounds/dhroh.mp3", image: "images/dhroh.png" },
   { letter: "য়", sound: "sounds/yaa.mp3", image: "images/yaa.png" },
-  { letter: "ৎ", sound: "sounds/tt.mp3", image: "images/tt.png" },
-  { letter: "ং", sound: "sounds/uno.mp3", image: "images/uno.png" },
-  { letter: "ঃ", sound: "sounds/bisa.mp3", image: "images/bisa.png" },
-  { letter: "ঁ", sound: "sounds/chon.mp3", image: "images/chon.png" }
+  { letter: "ৎ", sound: "sounds/tt.mp3" },
+  { letter: "ং", sound: "sounds/uno.mp3"  },
+  { letter: "ঃ", sound: "sounds/bisa.mp3" },
+  { letter: "ঁ", sound: "sounds/chon.mp3" }
 ];
 
 let group = localStorage.getItem("group");
