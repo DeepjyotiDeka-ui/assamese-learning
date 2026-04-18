@@ -1,3 +1,4 @@
+
 const vowels = [
   { letter: "অ", sound: "sounds/a.mp3", image: "images/a.png" },
   { letter: "আ", sound: "sounds/aa.mp3", image: "images/aa.png" },
@@ -60,9 +61,21 @@ let letters = group === "vowels" ? vowels : consonants;
 
 let index = 0;
 
+const preloadedImages = {};
+
+function preloadImages() {
+  letters.forEach(item => {
+    const img = new Image();
+    img.src = item.image;
+    preloadedImages[item.image] = img;
+  });
+}
+preloadImages();
+
 function showLetter() {
   document.getElementById("letter").innerText = letters[index].letter;
-  document.getElementById("letterImage").src = letters[index].image;
+  const imgElement = document.getElementById("letterImage");
+  imgElement.src = preloadedImages[letters[index].image].src;
 }
 
 function goHome() {
