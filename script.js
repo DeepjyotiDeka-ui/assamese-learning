@@ -76,7 +76,12 @@ preloadImages();
 function showLetter() {
   document.getElementById("letter").innerText = letters[index].letter;
   const imgElement = document.getElementById("letterImage");
-  imgElement.src = preloadedImages[letters[index].image].src;
+  if (letters[index].image) {
+    imgElement.src = preloadedImages[letters[index].image].src;
+    imgElement.style.display = "block";
+  } else {
+    imgElement.style.display = "none";
+  }
 }
 
 function goHome() {
